@@ -12323,7 +12323,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="../preliminaryWork/networkDiagram.png" alt="Network Diagram"></p>
+<p><img src="networkDiagram.png" alt="Network Diagram"></p>
 
 </div>
 </div>
@@ -12387,30 +12387,12 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Survival-Analysis">Survival Analysis<a class="anchor-link" href="#Survival-Analysis">&#182;</a></h2>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
+<h2 id="Survival-Analysis">Survival Analysis<a class="anchor-link" href="#Survival-Analysis">&#182;</a></h2><ul>
 <li>Identify features that contribute to hardware failure</li>
 <li>Indentify hardware that requires the least amount of downtime</li>
 <li>Anticipate outages for a rack during the year</li>
 </ul>
 
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Formulation">Formulation<a class="anchor-link" href="#Formulation">&#182;</a></h3>
 </div>
 </div>
 </div><aside class="notes">
@@ -12428,7 +12410,16 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</aside><div class="fragment">
+</aside></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Formulation">Formulation<a class="anchor-link" href="#Formulation">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12505,7 +12496,7 @@ $$ S(t) = e^{-\int_{0}^{t} \lambda(u)du} = e^{-\sum \Lambda_{i}(t)} $$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Covariates are multiplicatively related to the hazard</p>
+<p>Covariates are multiplicatively related to the hazard function</p>
 $$ \lambda(t|X)= \lambda_{0}(t)exp(\beta_{0}X_{1}+...+\beta_{p}X_{p}) $$<ul>
 <li>$\lambda_{0}(t)$: is the non-parametric baseline hazard function</li>
 <li>$\lambda(t|X)$: is the expected hazard at time $t$</li>
@@ -12520,30 +12511,7 @@ $$ \lambda(t|X)= \lambda_{0}(t)exp(\beta_{0}X_{1}+...+\beta_{p}X_{p}) $$<ul>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Interpretting the coefficents is a matter of examining the <strong>Hazard Ratio</strong>:</p>
-$$\frac{\lambda(t|x)}{\lambda_{0}(t)} = exp(\beta_{0}X_{1}+...+\beta_{p}X_{p})$$<table>
-<thead><tr>
-<th style="text-align:center">Hazard Ratio</th>
-<th style="text-align:center">Interpretation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">$\frac{\lambda(t</td>
-<td style="text-align:center">x)}{\lambda_{0}(t)}=1$</td>
-<td>Predictor does not affect survival</td>
-</tr>
-<tr>
-<td style="text-align:center">$\frac{\lambda(t</td>
-<td style="text-align:center">x)}{\lambda_{0}(t)}&gt;1$</td>
-<td>Predictor associated with increased risk</td>
-</tr>
-<tr>
-<td style="text-align:center">$\frac{\lambda(t</td>
-<td style="text-align:center">x)}{\lambda_{0}(t)}&lt;1$</td>
-<td>Predictor is protective (improved survival)</td>
-</tr>
-</tbody>
-</table>
+$$\frac{\lambda(t|x)}{\lambda_{0}(t)} = exp(\beta_{0}X_{1}+...+\beta_{p}X_{p})$$<p><img src="hazardInterpretation.png" alt=""></p>
 
 </div>
 </div>
