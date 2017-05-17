@@ -12575,7 +12575,19 @@ $$\frac{\lambda(t|x)}{\lambda_{0}(t)} = exp(\beta_{0}X_{1}+...+\beta_{p}X_{p})$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="cocordanceIndex.png" alt=""></p>
+<p><img src="concordanceIndex.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>It can be interpreted as the fraction of all pairs of subjects whose predicted survival times are correctly ordered among all subjects that can actually be ordered. In other words, it is the probability of concordance between the predicted and the observed survival</li>
+</ul>
 
 </div>
 </div>
@@ -12586,6 +12598,9 @@ $$\frac{\lambda(t|x)}{\lambda_{0}(t)} = exp(\beta_{0}X_{1}+...+\beta_{p}X_{p})$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>The index of concordance is a "global" index for validating the predictive ability of a survival model. It is the fraction of pairs in your data, where the observation with the higher survival time has the higher probability of survival predicted by your model. As far as I remember it it equivalent to a rank correlation.</p>
+<p>The index is not calculated for every observation/subject. So the c-index can not be interpreted as the risk of a subject. High values mean that your model predicts higher probabilities of survival for higher observed survival times.</p>
+<p>If you are interested in the risk of a subject in a timeperiod t, I think you have to estimate the survival and hazard function for a given set of regressors. My main reference on this subject is Harrell (2001): Rgression Modeling Strategies, Springer</p>
 
 </div>
 </div>
