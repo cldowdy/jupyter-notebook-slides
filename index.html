@@ -12269,6 +12269,25 @@ a.anchor-link {
 <h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2>
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="networkDiagram.png" alt="Network Diagram"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Meta-Data">Meta Data<a class="anchor-link" href="#Meta-Data">&#182;</a></h2>
+</div>
+</div>
 </div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12285,7 +12304,21 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Total-Number-of-Files">Total Number of Files<a class="anchor-link" href="#Total-Number-of-Files">&#182;</a></h3><p>5225 Files -- x G total</p>
+<h3 id="Sampling-Frequency">Sampling Frequency<a class="anchor-link" href="#Sampling-Frequency">&#182;</a></h3><p>5 minute intervals aggregated</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Total-Number-of-Files">Total Number of Files<a class="anchor-link" href="#Total-Number-of-Files">&#182;</a></h3><p>5225 Files -- 81 G total</p>
+<ul>
+<li>x servers </li>
+<li>y racks</li>
+</ul>
 
 </div>
 </div>
@@ -12317,17 +12350,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</aside></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="networkDiagram.png" alt="Network Diagram"></p>
-
-</div>
-</div>
-</div></section><section>
+</aside></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12368,6 +12391,26 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Normalized-Roll-Counts-of-Servers">Normalized Roll Counts of Servers<a class="anchor-link" href="#Normalized-Roll-Counts-of-Servers">&#182;</a></h2><p><img src="tableServerRollCounts.PNG" alt="">
 <img src="histServerRollCounts.png" alt=""></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="overall_content.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="Difference_content.png" alt=""></p>
 
 </div>
 </div>
@@ -12537,7 +12580,7 @@ $$\frac{\lambda(t|x)}{\lambda_{0}(t)} = exp(\beta_{0}X_{1}+...+\beta_{p}X_{p})$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="HazardRatio.png" alt=""></p>
+<p><img src="hazardRatio2.png" alt=""></p>
 
 </div>
 </div>
@@ -12552,8 +12595,8 @@ $$\frac{\lambda(t|x)}{\lambda_{0}(t)} = exp(\beta_{0}X_{1}+...+\beta_{p}X_{p})$$
 <li>Pictured here is a plot of the Hazard Ratio for coefficients that were significant at the 5% level.</li>
 <li>Coinfidence intervals for specific coefficients are displayed in light-blue </li>
 <li>Note that coefficients with error bars overlapping the red-line (where hazard ratio = 1) should be interpretted as no effect on survival</li>
-<li>The Samsung Server has a hazard rate equal to roughly 12x that of our baseline Toshiba server (very risky)</li>
-<li>A unit increase in FlitRatio corresponds to a 300% increase in the expected hazard function</li>
+<li>The TSSTcorp server has a hazard rate equal to roughly 44x that of our baseline Toshiba server (very risky)</li>
+<li>The Intel Server has a hazard rate equal to roughly 38x that of our baseline Toshiba server (very risky)</li>
 </ul>
 
 </div>
@@ -12565,11 +12608,24 @@ $$\frac{\lambda(t|x)}{\lambda_{0}(t)} = exp(\beta_{0}X_{1}+...+\beta_{p}X_{p})$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="concordanceIndex.png" alt=""></p>
+<p><img src="concordanceIndex2.png" alt=""></p>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Concordance is a "global" index for validating the predictive ability of a survival model</li>
+</ul>
+
+</div>
+</div>
+</div><aside class="notes">
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12581,7 +12637,8 @@ $$\frac{\lambda(t|x)}{\lambda_{0}(t)} = exp(\beta_{0}X_{1}+...+\beta_{p}X_{p})$$
 
 </div>
 </div>
-</div><aside class="notes">
+</div>
+</aside><aside class="notes">
 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12595,23 +12652,16 @@ $$\frac{\lambda(t|x)}{\lambda_{0}(t)} = exp(\beta_{0}X_{1}+...+\beta_{p}X_{p})$$
 </div>
 </div>
 </div>
-</aside></section></section><section><section>
+</aside>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="overall_content.png" alt=""></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="Difference_content.png" alt=""></p>
+<h2 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h2><ul>
+<li>When appropriate, server/rack hardware should be exchanged for protective components</li>
+<li>Surivival analysis provides a means of comparing risk factors and how they compare to your baseline</li>
+</ul>
 
 </div>
 </div>
